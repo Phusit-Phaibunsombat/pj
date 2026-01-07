@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link workshop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(249, 249, 249);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: crimson;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgb(99, 99, 99);
+            margin-bottom: 20px;
+        }
+
+        .link-ext {
+            text-decoration: none;
+            color: darkblue;    
+        }
+
+        .card1, .card2 {
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        .card1.bordercolor-1 {border-top: 4px solid red;}
+        .card1.bordercolor-2 {border-top: 4px solid orange;}
+        .card1.bordercolor-3 {border-top: 4px solid yellow;}
+        .card1.bordercolor-4 {border-top: 4px solid yellowgreen;}
+        .card1.bordercolor-5 {border-top: 4px solid cyan;}
+        .card1.bordercolor-6 {border-top: 4px solid violet;}
+
+        .card2.border-shadow {
+            border: 1px solid lightgray;
+            box-shadow: 2px 2px 5px lightgrey;
+        }
+
+        code {
+            background-color: rgb(229, 229, 229);
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .image-link img {
+            width: 260px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .image-link img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+        }
+        pre {
+            background: #f1f1f1;
+            padding: 10px;
+            overflow-x: auto;
+            border-left: 4px solid crimson;
+            border-radius: 8px;
+        }
+
+        .note {
+            margin-top: 16px;
+            padding: 12px 16px;
+            background: rgba(34, 197, 94, 0.08);
+            border-left: 4px solid #22C55E;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .note::before {
+            content: "☠️";
+        }
+
+        .external-link,
+        .internal-link,
+        .email-link,
+        .download-link {
+            display: inline-block;
+            background-color: #f7e36b;
+            padding: 8px 14px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-top: 6px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Workshop: Various Links</h1>
+        <p class="subtitle">เรียนรู้ลิงก์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+
+        <!-- card 1 -->
+        <div class="card-grid">
+            <div class="card1 bordercolor-1">
+                <h2>1.External Links</h2>
+                <div class="card2 border-shadow">
+                    <a href="https://www.wikipedia.org/" target="_blank" class="link-ext">Visit Wikipedia</a>
+                    <p><code>target="_blank"</code> เปิดลิงก์ในแท็บใหม่</p>
+                </div>
+                <div class="card2 border-shadow">
+                    <a href="https://www.google.com" target="_self" class="link-ext">Visit Google</a>
+                    <p><code>target="_self"</code> เปิดลิงก์ในหน้าเดิม</p>
+                </div>
+            </div>
+            <!-- card2 -->
+            <div class="card1 bordercolor-2">
+                <h2>2.Internal Links & Anchor Links</h2>
+                <pre>
+    &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+    &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+    &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;</pre>
+                <a href="#jump">Click to Jump</a>
+                <h3 id ="jump">This is the jump target</h3>
+            </div>
+            <!-- card3 -->
+            <div class="card1 bordercolor-3">
+                <h2>3.Email Links</h2>
+                <pre>
+    &lt;a href="mailto:student@example.com?subject=Hello"&gt;
+    Send an Email
+    &lt;/a&gt;</pre>
+                <a href="">Send an Email</a>
+            </div>
+            <!-- card4 -->
+            <div class="card1 bordercolor-4">
+                <h2>4.Download Links</h2>
+                <pre>
+    &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;</pre>
+                <a href="File4Dowload/kfc.jpg" download class="download-link">Download Text File</a>
+                <p class="note">ต้องมีไฟล์ในโฟลเดอร์จึงตะดาวน์โหลดได้จริง</p>
+            </div>
+        </div>
+        <!-- card5 -->
+        <div class="card1 bordercolor-5">
+            <h2>5.Button Link</h2>
+            <p>ลิงก์ที่ออกแบบให้คล้ายปุ่ม เหมาะกับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+            <pre>
+    &lt;a href="https://www.example.com" class="btn-link"&gt;
+    Visit Website
+    &lt;/a&gt;</pre>
+            <a href=""class="visit">Visit Website</a>
+            <p>สร้างปุ่มด้วยแท็ก <code>button</code></p>
+            <pre>
+    &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+    - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+    - ผูกกับ DOM (document) โดยตรง
+    &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+    - นิยมใช้มากกว่า
+    - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+    - ผูกกับ window โดยตรง</pre>
+            <button>HTML Tutorial</button>
+            <button>Visit Website</button>
+        </div>
+        <!-- card6 -->
+        <div class="card1 bordercolor-6">
+            <h2>6. Image Link</h2>
+            <p>คลิกที่รูปภาพเพื่อเปิดลิงก์</p>
+            <pre>
+    &lt;a href="https://youtube.com"&gt;
+    &lt;img src="images/sample.jpg" width="250"&gt;
+    &lt;/a&gt;</pre>
+            <div class="image-link">
+                <a href="https://www.youtube.com/?hl=th&gl=TH&app=desktop" target="_blank">
+                    <img src="data:image/png;base64,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" alt="รูปภาพ" width="250"></a>
+            </div>
+            <p class="note">หากต้องการไปรูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น <code>images/photo.jpg</code></p>
+            
+        </div>
+    </div>
+</body>
+</html>
