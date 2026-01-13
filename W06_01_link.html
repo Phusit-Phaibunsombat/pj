@@ -68,6 +68,12 @@
             gap: 25px;
         }
 
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
         .image-link img {
             width: 260px;
             border-radius: 12px;
@@ -194,7 +200,35 @@
                     <img src="data:image/png;base64,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" alt="รูปภาพ" width="250"></a>
             </div>
             <p class="note">หากต้องการไปรูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น <code>images/photo.jpg</code></p>
-            
+            <div class="card2 border-shadow" style="margin-top: 25px;">
+                <div class="button-grid">
+                    <div class="cardbutton">
+                        <p>ปุ่ม <code>ducument.location</code></p>
+                        <button>HTML Tutorial</button>
+                    </div>
+                    <div class="cardbutton">
+                        <p>ปุ่ม <code>location.href</code></p>
+                        <button>Visit Website</button>
+                    </div>
+                    <div class="cardbutton">
+                        <p>ตัวอย่างปุ่มจาก https://cssnippets.shefali.dev</p>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                    <div class="cardbutton">
+                        <p>เพิ่มขอบทอง</p>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                    <div class="cardbutton">
+                        <p>เพิ่มแอนิเมชั่นเมื่อชี้ปุ่ม</p>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                    <div class="cardbutton">
+                        <p>ปุ่มสีดำ ขอบทอง แสงวิ่ง</p>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+cssnippets.shefali.dev
         </div>
     </div>
 </body>
