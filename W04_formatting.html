@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #abd2ff;
+
+        }
+
+        .container {
+            /*background-color: rgb(196, 229, 241);*/
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: rgb(224, 239, 255);
+            padding: 20px;
+            margin-bottom: 20px 0;
+            border-radius: 10px;
+            border-top: 4px solid rgb(37, 129, 221);
+        }
+
+        .card.module-1 {border-top-color: rgb(0, 0, 0) ;}
+        .card.module-2 {border-top-color: rgba(93, 235, 145, 0.588) ;}
+
+        h1 {
+            color: rgb(25, 52, 255);
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background-color: rgb(96, 169, 252);
+            padding: 2px 8px;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background-color: azure;
+        }
+
+        footer {
+            margin-bottom: 30px;
+
+        }
+
+        .text-color {color: #0077ff;}
+
+        .note {
+            border-top: 4px solid rgb(175, 116, 116);
+            color: rgb(6, 54, 80);
+            font-size: 12px;
+        }
+        .note::before{
+            content: "⛄ ";
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Workshop: HTML Text Formatting</h1>
+        <p >ฝึกใช้แท็กรูปแบบข้อความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
+
+        <!-- Card 1: Explanation -->
+        <section class="card">
+            <h2>1. สิ่งที่ต้องรู้ก่อนเริ่มทำ Workshop</h2>
+
+            <p>HTML มีแท็กสำหรับจัดรูปแบบข้อความ ทำให้เนื้อหาดูเด่น อ่านง่าย และสื่อความหมายได้ดีขึ้น</p>
+
+            <ul>
+                <li>&lt;b&gt; – <b class="text-color">ตัวหนา (เน้นเฉย ๆ)</b></li>
+                <li>&lt;strong&gt; – <strong class="text-color">ตัวหนาแบบ “สำคัญ” เชิงความหมาย</strong> (semantic importance)</li>
+                <li>&lt;i&gt; – <i class="text-color">ตัวเอียง (ใช้กับศัพท์เฉพาะหรือตัวเน้น)</i></li>
+                <li>&lt;em&gt; – <em class="text-color">ตัวเอียงแบบเน้นน้ำเสียง</em></li>
+                <li>&lt;u&gt; – <u class="text-color">ขีดเส้นใต้</u></li>
+                <li>&lt;ins&gt; – <ins class="text-color">ขีดเส้นใต้</ins></li>
+                <li>&lt;mark&gt; – <mark class="text-color">ไฮไลต์ข้อความ</mark></li>
+                <li>&lt;code&gt; – <code class="text-color">แสดงข้อความเป็นรูปแบบโค้ด</code></li>
+                <li>&lt;small&gt; – <small class="text-color">ข้อความขนาดเล็ก</small></li>
+                <li>&lt;del&gt; – <del class="text-color">ข้อความขีดฆ่า</del></li>
+                <li>&lt;s&gt; – <s class="text-color">ข้อความขีดฆ่า</s></li>
+                <li>&lt;sub&gt; – ตัวห้อย เช่น H<sub class="text-color">2</sub>O</li>
+                <li>&lt;sup&gt; – ตัวยก เช่น x<sup class="text-color">2</sup></li>                
+            </ul>
+            <div class="box">
+                <p>แท็กที่ไม่รองรับใน HTML5</p>
+                <ul>
+                    <li>&lt;strike&gt; – <strike class="text-color">not support in HTML5</strike></li>
+                    <li>&lt;big&gt; – <big class="text-color">not support in HTML5</big></li>
+                    <li>&lt;tt&gt; – <tt class="text-color">not support in HTML5</tt></li>
+                </ul>
+            </div>
+
+            <div class="note">
+                นักศึกษาต้องใช้แท็ก formatting อย่างน้อย 5 ชนิดในงานนี้
+            </div>
+        </section>
+       
+        <!-- Card 2: Task -->
+        <section class="card module-1">
+            <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
+            <p>ให้ค้นหาเนื้อหาเกี่ยวกับ <b>“เทคโนโลยีคอมพิวเตอร์สมัยใหม่”</b> โดยต้องมี:</p>
+
+            <ul>
+                <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
+                <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
+                <li>ใช้แท็ก formatting อย่างน้อย <b>5 ประเภท</b></li>
+                <li>ข้อความไหนมีการจัด formatting ให้ <b>ใส่สีข้อความเป็นสีแดงชมพู</b></li>
+            </ul>
+        </section>
+
+        <!-- Card 3: Example from students -->
+        <section class="card module-2">
+            <h2>บล็อกนี้สำหรับนักศึกษาหาเนื้อหามาใส่เอง</h2>
+            <p>เอาเนื้อหามาใส่ในนี้</p>
+
+        </section>
+
+        <footer><a href="index.html">← Back to HTML Tutorial</a></footer>
+
+    </div>
+
+        <footer></footer>
+
+    </div>
+    
+</body>
+</html>
