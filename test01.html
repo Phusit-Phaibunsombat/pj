@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test01</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+    ackground-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-color: rgb(115, 184, 244);
+}
+
+
+
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#000000);
+    color:white;
+    padding:5px;
+    text-align:center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+pre {
+  background: #ffaa00;
+  padding: 5px 30px;
+  overflow-x: auto;
+  font-size: 16px;
+  line-height: 0.4;
+  border-radius: 8px;
+}
+
+code {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+/* Layout */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    margin-bottom:40px;
+}
+
+h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+}
+
+.card1{
+    background:white;
+    border-radius:14px;
+    padding:20px;
+    box-shadow:0 6px 15px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.card2{
+    background:white;
+    border-radius:14px;
+    padding:20px;
+    box-shadow:0 6px 15px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.card3{
+    background:white;
+    border-radius:14px;
+    padding:20px;
+    box-shadow:0 6px 15px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    margin-bottom: 25px;
+    
+}
+.card4{
+    background:rgb(255, 0, 0);
+    border-radius:14px;
+    padding:20px;
+    box-shadow:0 6px 15px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.btn-text-link {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.btn-text-link li {
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+}
+
+.btn-text-link li:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.profile{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.profile img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #2a5298;
+}
+
+.profile p{
+    margin:6px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+th,td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+th{
+    background:#eef2ff;
+}
+
+.gpa{
+    margin-top:15px;
+    text-align:right;
+    font-weight:bold;
+    color:#2a5298;
+}
+
+.contact p{
+    margin:8px 0;
+}
+
+footer{
+    background:#000000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+
+img {
+  float: right;
+  margin-left: 15px;
+}
+
+
+
+.position.right {
+    justify-content: flex-end;
+}
+
+.note1::before{content:"📊";}
+.note2::before{content:"🧑‍🎓";}
+.note3::before{content:"📚";}
+.note4::before{content:"📞";}
+.note5::before{content:"🎓";}
+.note6::before{content:"👨‍🏫";}
+.note7::before{content:"🔗";}
+.note8::before{content:"👤";}
+.note9::before{content:"📖";}
+.note10::before{content:"📑";}
+.note11::before{content:"🏆";}
+.note13::before{content:"🛖";}
+
+</style>
+
+</head>
+<body>
+    <header>
+    <h1>รายงานผลเกรด</h1>
+    </header>
+
+    <div class="card profile">
+        <ul class="btn-text-link">
+            <li><p><code>สาขาวิศวกรรมซอฟต์แวร์</code></p></li>
+            <li><p><code>ผลการเรียน</code></p></li>
+            <li><p><code>ติดต่อ</code></p></li>
+        </ul>
+    </div>
+<div class="container">
+
+<section>
+
+    <div class="img"><img src="data:image/jpg;base64,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">
+
+
+    <div class="card2">
+        
+        <pre>
+            <h2>Mr.Phusit</h2>
+            <p class="note3"><strong>รหัสนักศึกษา:</strong> 674259018</p>
+            <p class="note8"><strong>ชื่อ-นามสกุล:</strong> นายภูศิษฏ์ ไพบูรณ์สมบัติ</p>
+            <p class="note5"><strong>หมู่เรียน:</strong> 67/50</p>
+            <p class="note6"><strong>อาจารย์ทีปรึกษา:</strong>ผศ.ดร.อุษณีย์ ภักดีตระกูลวงศ์</p>
+            <p class="note7"><strong>GitHub:</strong><code>https://github.com/Phusit-Phaibunsombat</code></p>
+        </pre>
+    </div>
+</div>
+</section>
+
+<!-- ผลการเรียน -->
+<div class="card3">
+        <ul>
+            <li><p class="note3">ปี 1 เทอม 1 : 3.52</p></li>
+            <li><p class="note9">ปี 1 เทอม 2 : 3.70</p></li>
+            <li><p class="note10">ปี 2 เทอม 1 : 3.32</p></li>
+        </ul>
+</div>
+
+<div class="card4">
+    <p class="note11">เกรดเฉลี่ยสะสม: 3.60</p>
+</div>
+
+<footer>&copy;2024 Wenmaster by Phusit ID 674259018</footer>
+<footer>
+    <p class="note12">Nakhon Pathom Rajabhat University</p>
+</footer>
+</div>
+
+
+</body>
+</html>
