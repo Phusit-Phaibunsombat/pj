@@ -1,32 +1,32 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 html {
   font-size: 16px;
+  scroll-padding-top: 200px;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Prompt", "Segoe UI", Helvetica, sans-serif;
-  background-color: rgb(255, 255, 255);
-  color: black;
+  font-family: "Kanit", "Segoe UI", Helvetica, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
 }
 
 .wrapper {
-  width: 1000px;
-  max-width: 100%;
-  margin: auto;
-
-  /* background-color: rgb(255, 255, 255); */
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-/* ========= Header ========= */
+/* ============= Header ============= */
 .site-header {
-  background-color: white;
+  background-color: #fff;
   padding: 20px 0;
-  border-bottom: 2px solid #007980;
+  border-bottom: 2px solid rgb(135, 135, 135);
 }
 
 .box-header-inner {
@@ -35,10 +35,11 @@ body {
   align-items: center;
 }
 
-.headar-title {
+.header-title {
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 4px;
+  color: rgb(0, 0, 108);
 }
 
 .header-subtitle {
@@ -48,11 +49,11 @@ body {
 }
 
 .social-icon a {
-  font-weight: 600;
   font-size: 1rem;
-  color: #000000;
+  font-weight: 600;
+  color: #444;
 
-  border: 1px solid #000000;
+  border: 1px solid #313131;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -66,6 +67,14 @@ body {
   transition: all 0.3s ease;
 }
 
+.social-icon a:hover {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: white;
+
+  transform: translateY(-5px);
+}
+
 a {
   text-decoration: none;
 }
@@ -74,82 +83,69 @@ a:hover {
   text-decoration: underline;
 }
 
-.social-icon a:hover {
-  border: #0077ff;
-  background-color: #0077ff;
-  color: #fff;
-
-  transform: translateY(-5px);
-}
-
-
-/* ========= Navbar ========= */
-
-.main-nav {
-  background-color: black;
-
-}
-
+/* ============= Navbar ============= */
 .nav-menu {
-  list-style: none;
   display: flex;
+  list-style: none;
 
   flex-wrap: wrap;
-  /* gap: 15px; */
 }
 
 .nav-menu li a {
-  color: #ffffff;
+  color: white;
   font-size: 0.9rem;
   font-weight: 500;
 
   display: block;
   padding: 10px 15px;
+  text-decoration: none;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  background-color: #007980;
-
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  border-radius: 3px;
 }
 
-/* ========= Hero Section ========= */
+.main-nav {
+  background-color: rgb(0, 0, 0);
+}
 
+/* ============= Hero Section ============= */
 .hero-content {
-  background-color: #aeaeae;
-  padding: 35px 0;
-  box-shadow: 0 4px 15px #aeaeae;
+  background-color: #e3e3e3;
+  padding: 30px 0;
+  box-shadow: 0 4px 15px rgba(157, 157, 157, 0.596);
   margin-bottom: 30px;
 }
 
 .hero-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #000000;
-  text-shadow: 2px 2px 4px rgb(255, 255, 255);
-
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px #a2a2a2;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 20px;
+}
 
-  /*
+/*
         grid-template-columns: 1fr 1fr;
         grid-template-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, minmax(250px, 1fr));
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     */
-
-}
-
 .hero-item {
-  background-color: #6b6b6b;
-  padding: 20px;
-  border-radius: 15px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
 
   transition: all 0.3s ease;
 }
@@ -163,14 +159,14 @@ a:hover {
 .hero-item h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000000;
+  color: #333;
   line-height: 1.3;
   margin-bottom: 10px;
 }
 
 .hero-item p {
   font-size: 0.9rem;
-  color: #000000;
+  color: #666;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -178,7 +174,7 @@ a:hover {
 .hero-item .read-more {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #00aaff;
+  color: #1e8bc3;
 
   display: inline-block;
 }
@@ -189,7 +185,7 @@ a:hover {
 }
 
 .hero-item .read-more::after {
-  content: '→';
+  content: "→";
   margin-left: 5px;
 
   transition: margin-left 0.3s ease;
@@ -199,24 +195,24 @@ a:hover {
   margin-left: 10px;
 }
 
-/* ========= Page Section ============= */
+/* ============= Page Section ============= */
 .content-layout {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 0.9fr;
   gap: 20px;
 }
 
-/* POSTS ------- Main-Left -------- */
+/* POSTS ---------- Main-Left ----------- */
 
 .card {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   border-radius: 4px;
   padding: 15px;
-  box-shadow: 0 2px 8px rgb(128, 128, 128);
+  box-shadow: 0 2px 8px rgb(186, 186, 186);
 }
 
 .card+.card {
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .post-header {
@@ -226,30 +222,31 @@ a:hover {
 }
 
 .date-circle {
+  border-radius: 50%;
+  background-color: darkblue;
   width: 55px;
   height: 55px;
-  background-color: #5e80ed;
-  border-radius: 50%;
 
+  color: white;
   font-size: 0.7rem;
-  color: #ffffff;
   font-weight: 600;
 
   display: flex;
   justify-content: center;
-  align-items:  center;
+  align-items: center;
   flex-direction: column;
 }
 
 .date-day {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: 1;    /* ระยะห่างข้อความ */
+  line-height: 1;
 }
 
 .post-title {
   font-size: 1.1rem;
   font-weight: 600;
+  margin: 15px 0;
 }
 
 .card-header-line {
@@ -260,16 +257,15 @@ a:hover {
 }
 
 .post-footer {
-  color: #000000;
+  color: #555;
   font-size: 0.75rem;
 
-  border-top: 1px solid rgb(255, 255, 255);
-  padding: 8px;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
 }
 
-
-/* ------- card Image -------- */
-.post-image  {
+/* ------------- card image ------------- */
+.post-image {
   height: 200px;
   overflow: hidden;
 
@@ -283,132 +279,75 @@ a:hover {
 }
 
 .post-detail {
-  color: #000000;
   font-size: 0.8rem;
+  color: #555;
   line-height: 1.6;
-
 }
 
-/* =========== table style ============= */
+/* =================== table style ===================== */
 
 .table-description {
-font-size: 0.84rem;
-color: #666;
-line-height: 1.5;
-margin-bottom: 15px;
+  font-size: 0.84rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .comparison-table {
-width: 100%;
-border-radius: 8px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-margin: 20px 0;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 
-/* border: 2px solid #fc2525; */
-/* border-collapse: collapse; */
-overflow: hidden;
+  /* border: 2px solid #fc2525; */
+  /* border-collapse: collapse; */
+  overflow: hidden;
 }
 
 .comparison-table th {
-background: linear-gradient(45deg, #000000 0%, #2c2c2c 100%);
-color: white;
-font-size: 1rem;
-font-weight: 600;
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(37, 37, 37) 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
 
-text-align: left;
-padding: 15px;
+  text-align: left;
+  padding: 15px;
 }
 
 .comparison-table td {
-border-bottom: 1px solid #000000;
-background-color: #ffffff;
-padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 12px 15px;
 }
 
 .comparison-table tr:nth-child(even) td {
-background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .comparison-table tr:hover td {
-background-color: #e3f2fd;
-transition: background-color 0.3s ease;
+  background-color: #e3f2fd;
+  transition: background-color 0.3s ease;
 }
 
 .comparison-table .feature {
-font-weight: 600;
-color: #333;
-background-color: #f0f4f8;
+  font-weight: 600;
+  color: #333;
+  background-color: #f0f4f8;
 }
 
 .comparison-table .pro {
-color: #28a745;
-font-weight: 500;
+  color: #28a745;
+  font-weight: 500;
 }
 
 .comparison-table .con {
-color: #dc3545;
-font-weight: 500;
+  color: #dc3545;
+  font-weight: 500;
 }
 
 .comparison-table .neutral {
-color: #6c757d;
+  color: #6c757d;
 }
-
-
-/* ========================================================= */
-/* SIDEBAR -----Right------------------------------------------ */
-/* ========================================================= */
-.sidebar {
-display: flex;
-flex-direction: column;
-gap: 15px;
-}
-
-.sidebar .widget {
-background: #fff;
-border-radius: 3px;
-box-shadow: 0 0 0 1px #dee3ea;
-padding: 15px;
-}
-
-.widget-title {
-font-size: 1rem;
-font-weight: 600;
-margin-bottom: 8px;
-}
-
-.widget p {
-font-size: 0.875rem;
-color: #555;
-line-height: 1.5;
-margin-bottom: 8px;
-}
-
-.author-photo {
-width: 100%;
-height: 140px;
-background: #d9e3f0;
-margin: 8px 0;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-font-size: 13px;
-color: #555;
-}
-
-.btn-facebook {
-background: #3b5998;
-color: #fff;
-font-size: 12px;
-border-radius: 3px;
-margin-top: 5px;
-
-display: inline-block;
-padding: 6px 10px;
-}
-
 
 /* ========================================================= */
 /* --- Form for Left side --- */
@@ -416,147 +355,189 @@ padding: 6px 10px;
 
 /* ---------- Title ---------- */
 .contact-title {
-font-size: 28px;
-font-weight: 600;
-text-align: center;
-color: #333;
-margin-bottom: 15px;
-text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 /* ---------- Container ของฟอร์ม ---------- */
 .contact-form-main {
-/* max-width: 600px; */
-width: 95%;
-border: 1px solid #e0e0e0;
-border-radius: 15px;
-background: #fff;
-padding: 40px;
-margin: 0 auto;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
+  /* max-width: 600px; */
+  width: 95%;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background: #fff;
+  padding: 40px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* ---------- Layout ของแถว/กลุ่ม ---------- */
 .form-row {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 20px;
-margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .form-row.full-width {
-grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .form-group {
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* ---------- Label ---------- */
 .form-label {
-display: block;
-font-size: 14px;
-font-weight: 600;
-margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 /* ---------- Controls (input/select/textarea) ---------- */
 .form-input,
 .form-select,
 .form-textarea {
-width: 100%;
-padding: 12px 15px;
-border-radius: 8px;
-font-size: 14px;
-transition: all 0.2s ease;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
 
-/* transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
+  /* transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
 transform 0.2s ease; */
 }
 
 .form-textarea {
-min-height: 100px;
-resize: vertical;
+  min-height: 100px;
+  resize: vertical;
 }
 
 .form-select {
-cursor: pointer;
+  cursor: pointer;
 }
 
 /* ฟอร์มหลัก (พื้นขาว) */
 .contact-form-main .form-input,
 .contact-form-main .form-select,
 .contact-form-main .form-textarea {
-background: #f8f9fa;
-border: 2px solid #e9ecef;
-color: #333;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #333;
 }
 
 /* Focus: ฟอร์มหลัก */
 .contact-form-main .form-input:focus,
 .contact-form-main .form-select:focus,
 .contact-form-main .form-textarea:focus {
-outline: none;
-background: #fff;
-border-color: #667eea;
-box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
-transform: translateY(-1px);
+  outline: none;
+  background: #fff;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
+  transform: translateY(-1px);
 }
 
 /* ---------- Checkbox group ---------- */
 .form-checkbox-group {
-display: flex;
-flex-wrap: wrap;
-gap: 15px;
-margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .checkbox-item {
-display: flex;
-align-items: center;
-font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }
 
 /* สีข้อความ checkbox แยกตามฟอร์ม */
 .contact-form-main .checkbox-item {
-color: #333;
+  color: #333;
 }
 
 .checkbox-item input[type="checkbox"] {
-margin-right: 8px;
-transform: scale(1.15);
-accent-color: #ff6b6b;
+  margin-right: 8px;
+  transform: scale(1.15);
+  accent-color: #ff6b6b;
 }
 
 /* ---------- Button (ใช้ class เดียว) ---------- */
 .form-button {
-width: 100%;
-border: none;
-padding: 12px 30px;
-border-radius: 25px;
-font-size: 16px;
-font-weight: 600;
-cursor: pointer;
-color: #fff;
-transition: all 0.2s ease;
+  width: 100%;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease;
 
-/* transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; */
+  /* transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; */
 }
 
 /* ปุ่มของฟอร์มหลัก */
 .contact-form-main .form-button {
-background: linear-gradient(45deg, #000000, #373737);
+  background: linear-gradient(45deg, #000000, #373737);
 }
 
 .contact-form-main .form-button:hover {
-background: linear-gradient(45deg, #5a67d8, #6b46c1);
-transform: translateY(-2px);
-box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+  background: linear-gradient(45deg, #000000, #373737);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+/* ========================================================= */
+/* SIDEBAR -----Right------------------------------------------ */
+/* ========================================================= */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar .widget {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #dee3ea;
+  padding: 15px;
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.widget p {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.author-photo {
+  width: 100%;
+  height: 140px;
+  background: #d9e3f0;
+  margin: 8px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  color: #555;
 }
 
 .btn-facebook {
-  background: #3b5998;
+  background: #000000;
   color: #fff;
   font-size: 12px;
   border-radius: 3px;
@@ -565,7 +546,6 @@ box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
   display: inline-block;
   padding: 6px 10px;
 }
-
 
 form {
   display: flex;
@@ -620,13 +600,13 @@ button:hover {
   width: 380px;
   padding: 40px 30px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #333333, #000000);
+  background: linear-gradient(135deg, #393939, #000000);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   color: white;
   margin: 20px 0px;
 }
 
-.widget-message {
+.widget-form-header {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -634,49 +614,275 @@ button:hover {
 }
 
 .inner-box {
-    background: #e6e8eb;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #444;
-    padding: 20px;
-    margin-top: 10px;
+  background: #e6e8eb;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #444;
+  padding: 20px;
+  margin-top: 10px;
 }
 
 .inner-box.small {
-    height: 90px;
-    flex-direction: column;
+  height: 90px;
+  flex-direction: column;
 }
 
 .inner-box.large {
-    height: 350px;
-    font-size: 16px;
+  height: 350px;
+  font-size: 16px;
 }
+
 h3 {
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ========= Gold Price ========= */
+
+:root {
+  --line: #000000;
+  --bg-01: #aaaaaa;
+  --bg-02: #aaaaaa;
+  --bg-03: #aaaaaa;
+  --up: #037a1f;
+  --down: #e21a42;
+
+}
+
+.wrap-table {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.price-table {
+  width: 100%;
+
+  color: #333;
+
+  border-collapse: collapse;
 
 
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid var(--line);
+  padding: 10px 4px;
+}
+
+.price-table thead th {
+  background-color: var(--bg-01);
+}
+
+.month {
+  background-color: var(--bg-01);
+}
+
+.num {
+  text-align: right;
+}
+
+.delta {
+  text-align: center;
+}
+
+.delta.up {
+  color: var(--up);
+}
+
+.delta.down {
+  color: var(--down);
+}
+
+.price-table tr.total th,
+.price-table tr.total td {
+  background-color: var(--bg-02);
+  font-weight: 600;
+}
+
+.price-table tr.data td {
+  background-color: var(--bg-03);
+}
+
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+
+}
+
+.icon.up {
+  border-bottom: 10px solid var(--up);
+  margin-right: 5px;
+}
+
+.icon.down {
+  border-top: 10px solid var(--down);
+  margin-right: 5px;
+}
+
+
+/* ========= Footer Styles ========= */
 footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
 }
+
 .back-link {
-    display: inline-block;
-    margin: 20px 0;
-    color: #333;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    background-color: #000f6e;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+  display: inline-block;
+  margin: 20px 0;
+  color: #333;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background-color: #000000;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
 }
+
+/* Order ลำดับใหม่ */
+
+/*  ค่าบวก ตัวบอกน้อยสุด จะอยู่บนสุดของกราฟ */
+  .order-widget01{ order: 2}
+  .order-widget02{ order: 3}
+  .order-widget03{ order: 4}
+  .order-widget04{ order: 5}
+  .order-widget05{ order: 1}
+
+
+/* ========= Responsive ========= */
+/*
+Breakpoint           Dimensions
+X-Small                <576px
+Small              sm  <576px>
+Medium             md  <768px>
+Large              lg  <992px>
+Extra large        xl  <1200px>
+Extra extra large  xxl <1400px>
+*/
+
+@media (max-width: 922px) {
+  .site-header {
+    background-color: #ffee00;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    background-color: #05c205;
+  }
+
+  .hero-grid,
+  .content-layout,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-checkbox-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .nav-menu li a {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ซ่อนเมนู hamburger บนจอใหญ่ */
+#burger-menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .site-header {
+    background-color: #ff002f;
+  }
+
+  /* กำหนดขนาด/พื้นที่ของปุ่ม */
+  #burger-menu {
+    display: block;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  /* วาด "เส้น 3 ขีด" ด้วย span + pseudo element */
+  #burger-menu span,
+  #burger-menu span::before,
+  #burger-menu span::after {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    transition: all 0.3s ease;
+    content: "";
+  }
+
+  /* จัดตำแหน่ง 3 เส้น (บน/กลาง/ล่าง) */
+  #burger-menu span {top: 11px;}
+  #burger-menu span::before {top: -8px;}
+  #burger-menu span::after {top: 8px}
+
+  /* Animation เมื่อกด */
+
+    /* ทำให้เส้น “กลาง” หายไป (โปร่งใส) */
+    #burger-menu.close span {
+        background: transparent;
+    }
+
+    /* เส้นบน rotate(45deg) หมุนเฉียงไปทางขวา */
+    /* top: 0; ทำให้ทั้งสองเส้น “มาซ้อนกันตรงกลาง” ก่อนหมุน */
+    #burger-menu.close span:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    /* เส้นล่าง rotate(-45deg) หมุนเฉียงไปทางซ้าย */
+    #burger-menu.close span:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    /* ซ่อนเมนู */
+    #menu {
+      display: none;
+      flex-direction: column;
+      background-color: #000000;
+    }
+
+    /* เปิดเมนูเมื่อ active แสดงเมนูขึ้นมา */
+        #menu.overlay {
+          display: flex;
+        }
+  }
+/*  ค่า - ตัว - มาหสุดจัอยู่บนสุดของกราฟ */
+  .order-image{ order: -3}
+  .order-table{ order: -2}
+  .order-form{ order: -1}
+
+/*  ค่าบวก ตัวบอกน้อยสุด จะอยู่บนสุดของกราฟ */
+  .order-widget01{ order: 1}
+  .order-widget02{ order: 2}
+  .order-widget03{ order: 3}
+  .order-widget04{ order: 4}
+  .order-widget05{ order: 5}
