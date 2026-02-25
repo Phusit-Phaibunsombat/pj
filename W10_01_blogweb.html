@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phusit's Blog</title>
+    <title>Athip's Blog</title>
     <link rel="stylesheet" href="css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,30 +17,40 @@
         <div class="wrapper">
             <div class="box-header-inner">
                 <div class="header-inner">
-                    <h2 class="headar-title">Phusit's Blog</h2>
+                    <h2 class="header-title">Athip's Blog</h2>
                     <p class="header-subtitle">รวมเนื้อหาเกี่ยวกับเทคโนโลยี AI น่าสนใจ</p>
                 </div>
                 <div class="social-icon">
-                    <a href="">f</a>
-                    <a href="">t</a>
-                    <a href="">in</a>
+                    <a href="#">f</a>
+                    <a href="#">t</a>
+                    <a href="#">in</a>
                 </div>
             </div>
         </div>
     </header>
+
     <!-- Navigation -->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="" class="active">Home</a></li>
-                <li><a href="">AI Technology</a></li>
-                <li><a href="">Machine Learning</a></li>
-                <li><a href="">Deep Learning</a></li>
-                <li><a href="">AI Tools</a></li>
-                <li><a href="">AI News</a></li>
-            </ul>
+
+            <!-- Hamburger Button -->
+            <div id="burger-menu">
+                <span></span>
+            </div>
+
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="">AI Technology</a></li>
+                    <li><a href="">Machine Learning</a></li>
+                    <li><a href="W10_01_blogweb.html">Deep Learning</a></li>
+                    <li><a href="">AI Tools</a></li>
+                    <li><a href="https://www.npru.ac.th">AI News</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <!-- Hero Content -->
     <section class="hero-content">
         <div class="wrapper">
@@ -49,8 +58,9 @@
             <h2 class="hero-title">🚀 เนื้อหาแนะนำสำหรับคุณ</h2>
 
             <div class="hero-grid">
+
                 <div class="hero-item">
-                    <h3>💡เทคนิค CSS Grid ที่ทุกคนควรรู้</h3>
+                    <h3>💡 เทคนิค CSS Grid ที่ทุกคนควรรู้</h3>
                     <p>เรียนรู้วิธีใช้ CSS Grid Layout เพื่อสร้างเลย์เอาต์ที่ซับซ้อนและยืดหยุ่น
                         พร้อมตัวอย่างการใช้งานจริง และเทคนิคขั้นสูงที่จะทำให้เว็บไซต์ของคุณโดดเด่น</p>
                     <a href="" class="read-more">อ่านเพิ่มเติม</a>
@@ -75,9 +85,7 @@
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
     <!-- Page Content -->
@@ -87,8 +95,8 @@
                 <!-- Left Sidebar -->
 
                 <div class="post-list">
-                    <!-- card 01  -->
-                    <section class="card">
+                    <!-- card 01 -->
+                    <section class="card order-image">
                         <p class="card-header-line">CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong></p>
 
                         <article>
@@ -99,19 +107,18 @@
                                     <span>AUG</span>
                                 </div>
                             </header>
-
                             <div class="post-image">
-                                <img src="https://files.thaiware.site/news/2017-05/images/10246-170502112742Af.jpg"
-                                    alt="fuji Mountain">
+                                <img src="https://preview.redd.it/more-than-4k-wallpapers-night-views-semi-realistic-v0-bq3anbtm3ohd1.jpg?width=640&crop=smart&auto=webp&s=60d67ed47ddcf7c6a6b12f5e6ebf3a768fc79f6a"
+                                    alt="view">
                             </div>
                             <p class="post-detail">รวมคำสั่ง CSS ที่จำเป็นสำหรับการสร้างเว็บไซต์ที่รองรับทุกขนาดหน้าจอ
                                 เริ่มจาก media queries, flexbox, grid layout และเทคนิคการใช้ viewport units
-                                เพื่อให้เว็บของคุณดูดีในทุกอุปกรณ์</p>
+                                เพื่อให้เว็บของคุณดูดีในทุกอุปกรณ์ …
+                            </p>
                             <span>| </span>
                             <a href="">read more</a>
                             <div class="post-footer">
-                                <span>Tags:</span>
-                                <span>•</span>
+                                <span>Tags: </span>
                                 <a href="">responsive design</a>
                                 <span>•</span>
                                 <a href="">media queries</a>
@@ -121,11 +128,9 @@
                                 <a href="">CSS grid</a>
                             </div>
                         </article>
-
                     </section>
-
-                    <!-- card 02  -->
-                    <section class="card">
+                    <!-- card 02 -->
+                    <section class="card order-table">
                         <p class="card-header-line">CATEGORY ARCHIVES: <strong>CSS DISPLAY PROPERTY</strong></p>
 
                         <article>
@@ -136,7 +141,6 @@
                                     <span>AUG</span>
                                 </div>
                             </header>
-
                             <p class="post-detail">ตารางด้านล่างแสดงความแตกต่างระหว่าง display: block และ display:
                                 inline-block เพื่อช่วยให้เข้าใจการเลือกใช้ display property ที่เหมาะสม</p>
 
@@ -188,19 +192,16 @@
                             </table>
 
                             <div class="post-footer">
-                                <span>Tags:</span>
-                                <span>•</span>
+                                <span>Tags: </span>
                                 <a href="">CSS</a>
                                 <span>•</span>
                                 <a href="">display property</a>
                             </div>
                         </article>
-
                     </section>
-
-                    <!-- card 03  -->
-                    <div class="card">
-                        <h2 class="contact-title">📞ติดต่อเรา</h2>
+                    <!-- card 03 -->
+                    <div class="card order-form">
+                        <h2 class="contact-title">📞 ติดต่อเรา</h2>
                         <div class="contact-form-main">
                             <form id="contactForm" action="" method="">
                                 <div class="form-row">
@@ -218,8 +219,8 @@
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label class="form-label">อีเมล *</label>
-                                        <input type="email" name="email" class="form-input" placeholder="example@email.com"
-                                            required>
+                                        <input type="email" name="email" class="form-input"
+                                            placeholder="example@email.com" required>
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label">เบอร์โทรศัพท์</label>
@@ -229,7 +230,8 @@
                                 <div class="form-row full-width">
                                     <div class="form-group">
                                         <label class="form-label">บริษัท/องค์กร</label>
-                                        <input type="text" name="company" class="form-input" placeholder="ชื่อบริษัทของคุณ">
+                                        <input type="text" name="company" class="form-input"
+                                            placeholder="ชื่อบริษัทของคุณ">
                                     </div>
                                 </div>
                                 <div class="form-row full-width">
@@ -274,27 +276,22 @@
                                 <button type="submit" class="form-button">📨 ส่งข้อความ</button>
                             </form>
                         </div>
-
                     </div>
                 </div>
-
-
                 <!-- Right Sidebar -->
                 <div class="sidebar">
-                    <div class="widget">
+                    <div class="widget order-widget01">
                         <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
                         <p>
-                            ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม
+                            ผมชื่อ Athip เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม
                             และเทคโนโลยี AI สำหรับ SME และ Startup
                         </p>
                         <div class="author-photo">รูปผู้เขียน</div>
                         <a href="#" class="btn-facebook">กดติดตามใน Facebook</a>
                     </div>
-
-
-                    <div class="widget">
+                    <div class="widget order-widget02">
                         <div class="widget-news">
-                            <h2 class="widget-message">📧 รับข่าวสารใหม่</h2>
+                            <h2 class="widget-form-header">📰 รับข่าวสารใหม่</h2>
 
                             <form>
                                 <label>ชื่อของคุณ</label>
@@ -315,7 +312,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="widget">
+                    <div class="widget order-widget03">
                         <div class="widget-contact">
                             <h2 class="widget-form-header">💬 ติดต่อด่วน</h2>
 
@@ -339,7 +336,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="widget">
+                    <div class="widget order-widget04">
                         <h3>Athip</h3>
                         <div class="inner-box small">
                             <p>กล่อง Facebook Like (ตัวอย่าง)</p>
@@ -347,7 +344,7 @@
                         </div>
 
                     </div>
-                    <div class="widget">
+                    <div class="widget order-widget05">
                         <h3>Sponsor</h3>
                         <div class="inner-box large">
                             <p>พื้นที่โฆษณา / วิดีโอ</p>
@@ -357,14 +354,123 @@
             </main>
         </div>
 
+        <div class="wrapper">
+            <section class="card" style="margin-top: 30px;">
+                <p class="card-header-line">CATEGORY ARCHIVES: <strong>ราคาทอง</strong></p>
+                <header class="post-header">
+                    <h2 class="post-title">ตารางสรุปราคาทองรายเดือนต่ำสุด-สูงสุดตั้งแต่ปี 2568-2569</h2>
+                    <div class="date-circle">
+                        <span class="date-day">18</span>
+                        <span>FEB</span>
+                    </div>
+                </header>
+                <p class="post-detail">
+                    สรุปข้อมูลราคาทองคําแท่งในประเทศชนิด 96.5% เริ่มตั้งแต่ปี 2549 ถึงปีปัจจุบัน 2568
+                    โดยเป็นการแสดงราคาต่ำสุด ราคาสูงสุดของทุกๆ เดือน รวมถึง ราคารวมที่ปรับเพิ่มขึ้นหรือลดลงในแต่ละเดือน
+                    และสรุปราคารวม สูงสุด ต่ำสุด ประจำปี
+                </p>
+
+                <div class="wrap-table">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">เดือน ปี</th>
+                                <th colspan="3">2569</th>
+                                <th colspan="3">2568</th>
+                            </tr>
+                            <tr>
+                                <th>ขึ้น/ลง</th>
+                                <th>ต่ำสุด</th>
+                                <th>สูงสุด</th>
+                                <th>ขึ้น/ลง</th>
+                                <th>ต่ำสุด</th>
+                                <th>สูงสุด</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="data">
+                                <th class="month">เม.ย.</th>
+                                <td class="delta">-</td>
+                                <td class="num">-</td>
+                                <td class="num">-</td>
+                                <td class="delta up"><span class="icon up"></span><span>+1,950</span></td>
+                                <td class="num">49,100</td>
+                                <td class="num">54,800</td>
+                            </tr>
+                            <tr class="data">
+                                <th class="month">มี.ค.</th>
+                                <td class="delta">-</td>
+                                <td class="num">-</td>
+                                <td class="num">-</td>
+                                <td class="delta up"><span class="icon up"></span><span>+3,750</span></td>
+                                <td class="num">46,350</td>
+                                <td class="num">50,100</td>
+                            </tr>
+                            <tr class="data">
+                                <th class="month">ก.พ.</th>
+                                <td class="delta down"><span class="icon down"></span><span>-1,250</span></td>
+                                <td class="num">68,200</td>
+                                <td class="num">81,950</td>
+                                <td class="delta up"><span class="icon up"></span><span>+1,850</span></td>
+                                <td class="num">44,600</td>
+                                <td class="num">47,450</td>
+                            </tr>
+                            <tr class="data">
+                                <th class="month">ม.ค.</th>
+                                <td class="delta up"><span class="icon up"></span><span>+9,250</span></td>
+                                <td class="num">64,550</td>
+                                <td class="num">81,950</td>
+                                <td class="delta up"><span class="icon up"></span><span>+2,050</span></td>
+                                <td class="num">42,550</td>
+                                <td class="num">44,850</td>
+                            </tr>
+                            <tr class="total">
+                                <th>ทั้งปี</th>
+                                <td class="delta up"><span class="icon up"></span><span>+8,000</span></td>
+                                <td class="num">64,550</td>
+                                <td class="num">81,950</td>
+                                <td class="delta up"><span class="icon up"></span><span>+22,550</span></td>
+                                <td class="num">42,550</td>
+                                <td class="num">67,400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </div>
     </div>
 
+    <div class="wrapper">
+        <a class="back-link" href="index.html">← Back to HTML Tutorial</a>
+    </div>
 
     <footer>
-         <p>&copy; 2025 Phusit — All rights reserved.</p>
+        <p>&copy; 2026 Phusit — All rights reserved.</p>
         <p>Designed for educational/demo purposes • Contact</p>
     </footer>
 
+    <script>
+        var burgerMenu = document.getElementById('burger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
